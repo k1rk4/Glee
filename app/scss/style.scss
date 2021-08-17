@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -185,6 +186,11 @@
   }
 }
 
+.top-slider {
+  &__inner{
+    background-color: #fcd7b6;
+  }
+}
 
 
 
