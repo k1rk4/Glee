@@ -1,5 +1,15 @@
-body{
+html,
+body {
+  height: 100%;
+}
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .head-container{
@@ -12,4 +22,16 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.footer a{
+  font-size: 14px;
+  color: $footer;
+  @extend %Rubik-400;
+}
+
+.footer-bottom{
+  font-size: 14px;
+  color: $footer;
+  @extend %Rubik-400;
 }
