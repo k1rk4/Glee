@@ -246,16 +246,21 @@
       margin: 0 5px;
       line-height: 0;
       button{
+        font-family: 'Rubik-Medium';
+        font-weight: 500;
         padding: 0;
-        font-size: 0;
-        background-color: #fde3cc;
+        font-size: 11px;
         width: 30px;
         height: 30px;
+        color: #667983;
+        background-color: #fde3cc;
         border-radius: 50%;
         border: none;
+        cursor: pointer;
         }
       &.slick-active {
         button {
+          color: $accent;
           background-color: #fff;
         }
       }
