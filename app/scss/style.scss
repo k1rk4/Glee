@@ -233,7 +233,7 @@
     padding: 24px 100px 24px 27px;
     @extend %Rubik-500;
     position: relative;
-    &-arrow{
+    & svg{
       position: absolute;
       top: 45%;
       left: 160px;
@@ -246,16 +246,21 @@
       margin: 0 5px;
       line-height: 0;
       button{
+        font-family: 'Rubik-Medium';
+        font-weight: 500;
         padding: 0;
-        font-size: 0;
-        background-color: #fde3cc;
+        font-size: 11px;
         width: 30px;
         height: 30px;
+        color: #667983;
+        background-color: #fde3cc;
         border-radius: 50%;
         border: none;
+        cursor: pointer;
         }
       &.slick-active {
         button {
+          color: $accent;
           background-color: #fff;
         }
       }
@@ -263,6 +268,135 @@
   }
 }
 
+.info{
+   max-width: 1800px;
+   margin: 0 auto;
+   padding: 0px 15px 75px;
+   display: flex;
+   justify-content: space-between;
+   &__item{
+     display: flex;
+     padding-top: 50px;
+     svg{
+       margin-top: 10px;
+     }
+   }
+   &__item-content{
+    //  text-align: center;
+     max-width: 240px;
+     padding-left: 25px;
+   }
+   &__item-title{
+     font-size: 18px;
+     line-height: 40px;
+     @extend %DMSans-700;
+   }
+   &__item-text{
+     font-size: 16px;
+     line-height: 30px;
+     @extend %DMSans-400;
+   }
+   &__item-line{
+     background-color: #e8e4df;
+     width: 1px;
+     height: 170px;
+   }
+}
+.products{
+  &__items{
+    display: grid;
+    min-height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px 0;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 380px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    padding: 35px 0;
+    &-title{
+      font-size: 16px;
+      line-height: 40px;
+      @extend %DMSans-500;
+      color: $accent;
+      margin-top: auto;
+    }
+    &-price{
+      font-size: 16px;
+      line-height: 40px;
+      @extend %DMSans-700;
+      color: #a3bbc8;
+      // padding-bottom: 40px;
+    }
+  }
+}
+.products__bottom{
+   max-width: 1800px;
+   margin: 0 auto;
+   padding: 145px 15px 100px;
+   display: flex;
+   &-item{
+     display: flex;
+     min-height: 390px;
+     width: 100%;
+     background-color: #feefe2;
+     position: relative;
+     img{
+       position: absolute;
+       top: -100px;
+       left: 130px;
+     }
+   }
+   &-item+.products__bottom-item{
+     margin-left: 30px;
+   }
+   &-img{
+     width: 50%;
+   }
+   &-content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+   &-title{
+    font-size: 26px;
+    line-height: 32px;
+    color: $accent;
+    @extend %DMSans-700;
+    margin-bottom: 30px;
+   }
+   &-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent;
+    @extend %Rubik-400;
+    margin-bottom: 35px;
+   }
+   &-btn{
+     width: 180px;
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+    padding: 24px 20px 24px 20px;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    @extend %Rubik-500;
+    position: relative;
+    & svg {
+      position: absolute;
+      top: 45%;
+      left: 135px;
+    }
+   }
+}
 
 
 
