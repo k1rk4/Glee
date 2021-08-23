@@ -24,6 +24,32 @@ body{
   padding: 0 15px;
 }
 
+.title{
+  font-size: 36px;
+  color: #191919;
+  @extend %DMSans-700;
+  text-align: center;
+  margin-bottom: 40px;
+  &__tab{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+    a{
+    font-size: 16px;
+    color: #8b8b8b;
+    @extend %DMSans-700;
+    &:hover{
+      color: #000;
+    }
+    }
+    &-item+.title__tab-item {
+      margin-left: 30px;
+    }
+  }
+}
+
+
+
 .footer a{
   font-size: 14px;
   color: $footer;
