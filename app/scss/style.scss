@@ -565,18 +565,37 @@
       border-top: 1px solid #e0e0e0;
       padding-top: 20px;
       display: flex;
-      // margin-top: auto;
     }
     &-date,
     &-author{
+      padding-left: 13px;
       font-size: 12px;
       line-height: 30px;
       @extend %Rubik-400;
       color: #222933;
-      margin-left: 15px;
+      margin-left: 5px;
+      position: relative;
+      &::before{
+        content:"";
+        position: absolute;
+        left: -5px;
+        top: 6px;
+      }
     }
     &-author{
       margin-left: 45px;
+      &::before{
+        width: 13px;
+        height: 13px;
+        background-image: url(../images/icons/user.svg);
+      }
+    }
+    &-date {
+      &::before {
+        width: 13px;
+        height: 15px;
+        background-image: url(../images/icons/calendar.svg);
+      }
     }
   }
 }
