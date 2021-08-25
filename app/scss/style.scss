@@ -491,7 +491,104 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 120px;
+}
+
+.insight{
+  // background-color: #fbf5ee;
+  background: linear-gradient(#fff 49%, #fbf5ee 49%);
+  // background: #000;
+  padding-top: 80px;
+  z-index: 0;
+  &__top{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title{
+      margin-bottom: 0;
+    }
+    &-link{
+      font-size: 16px;
+      color: #262626;
+      @extend %DMSans-700;
+      svg{
+        margin-left: 20px;
+      }
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    background: #fff;
+    max-width: 370px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    position: relative;
+    &-imglink{
+      display: block;
+      img{
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+    &-oval{
+      font-size: 14px;
+      @extend %DMSans-700;
+      color: #fff;
+      background-color: #a3bbc8;
+      width: 100px;
+      height: 30px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 235px;
+      left: 30px;
+    }
+    &-box{
+      height: 200px;
+      padding: 35px 30px 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    &-title{
+      padding-bottom: 15px;
+      font-size: 18px;
+      color: #262626;
+      @extend %DMSans-500;
+    }
+    &-info{
+      border-top: 1px solid #e0e0e0;
+      padding-top: 20px;
+      display: flex;
+      // margin-top: auto;
+    }
+    &-date,
+    &-author{
+      font-size: 12px;
+      line-height: 30px;
+      @extend %Rubik-400;
+      color: #222933;
+      margin-left: 15px;
+    }
+    &-author{
+      margin-left: 45px;
+    }
+  }
+}
+
+.partners {
+  padding: 75px 0 70px;
+  &__list {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 
