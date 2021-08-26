@@ -681,6 +681,37 @@
   }
 }
 
+.terms{
+  padding: 45px 0 40px;
+  font-size: 16px;
+  line-height: 30px;
+  color: $accent;
+  &__item{
+    margin-top: 75px;
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 40px;
+    @extend %Rubik-500;
+    margin-bottom: 35px;
+  }
+  &__list{
+    list-style: none;
+    counter-reset: my-counter;
+    &-item{
+      counter-increment: my-counter;
+      position: relative;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      &::before{
+        content:'0' counter(my-counter) '.';
+        position: absolute;
+        left: -30px;
+      }
+    }
+  }
+}
+
 
 
 
