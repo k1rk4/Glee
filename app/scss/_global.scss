@@ -91,3 +91,35 @@ body{
     color: inherit;
   }
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__list{
+    display: flex;
+    padding: 0 35px; 
+  }
+  &__item{
+    margin-right: 15px; 
+  }
+  &__link{
+    font-size: 16px;
+    color: $accent;
+    @extend %Rubik-400;
+    padding: 12px 20px;
+    border: 1px solid #a3bbc8;
+  }
+  &__link--active{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+  &__next{
+    font-size: 16px;
+    color: $accent;
+    @extend %Rubik-400;
+    padding: 12px 20px;
+    border: 1px solid #a3bbc8;
+  }
+}
+
