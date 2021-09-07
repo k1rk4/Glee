@@ -443,7 +443,7 @@
     margin-bottom: 35px;
    }
    &-btn{
-     width: 180px;
+    width: 180px;
     font-size: 15px;
     line-height: 12px;
     color: #436372;
@@ -457,7 +457,7 @@
       top: 45%;
       left: 135px;
     }
-   }
+  }
 }
 
 .design{
@@ -1415,7 +1415,181 @@
   }
 }
 
+.blog{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+    margin-right: 70px;
+  }
+  &__aside{
+    width: 270px;
+    .filter-search{
+      margin-bottom: 60px;
+    }
+    .filter-category{
+      margin-bottom: 50px;
+    }
+  }
+  &__item{
+    margin-bottom: 50px;
+  }
+  &__item-link{
+    position: relative;
+    max-width: 830px;
+    height: 500px;
+  }
+  &__item-img{
+    max-width: 830px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+  }
+  &__item-info{
+    position: absolute;
+    top: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $btn;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    width: 275px;
+    height: 70px;
+  }
+  &__item-date,
+  &__item-author{
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 6px;    
+    }
+  }
+  &__item-author {
+    margin-left: 30px;
+    &::before {
+      width: 13px;
+      height: 13px;
+      background-image: url(../images/icons/user-white.svg);
+    }
+  }
+  &__item-date {
+    &::before {
+      width: 13px;
+      height: 15px;
+      background-image: url(../images/icons/calendar-white.svg);
+    }
+  }
+  &__item-title{
+    margin: 40px 0;
+    font-size: 36px;
+    color: #333;
+    font-weight: 400;
+  }
+  &__item-text{
+    color: $accent;
+    margin-bottom: 40px;
+  }
+  &__item-btn{
+    width: 180px;
+    font-size: 15px;
+    line-height: 12px;
+    color: $btn;
+    padding: 20px 85px 20px 20px;
+    border: 1px solid #a3bbc8;
+    @extend %Rubik-500;
+    position: relative;
+    & svg {
+      position: absolute;
+      top: 45%;
+      left: 135px;
+      path{
+        fill: $btn;
+      }
+    }
+  }
+  &-pagination{
+    justify-content: start;
+    margin-top: 80px;
+  }
+}
 
+.filter-search {
+  &__form{
+    position: relative;
+  }
+  &__input{
+    border: 2px solid #edf1f4;
+    background-color: #fff;
+    height: 43px;
+    width: 270px;
+    padding: 0 55px 0 15px;
+    border-radius: 5px;
+  }
+  &__btn{
+    position: absolute;
+    border: none;
+    background-color: #edf1f4;
+    height: 43px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.recent-posts{
+  &__item{
+    margin-bottom: 20px;
+    display: flex;
+  }
+  &__img-link {
+    display: block;
+    margin-right: 20px;
+    min-width: 71px;
+  }
+  &__img {
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+  }
+  &__box-link{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    @extend %Rubik-400;
+  }
+  &__date {
+    color: #9a9a9a;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      background-image: url(../images/icons/calendar-grey.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 13px;
+      height: 15px;
+    }
+  }
+}
 
 
 
