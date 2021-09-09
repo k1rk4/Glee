@@ -1715,7 +1715,11 @@
   margin-bottom: 30px;
   display: flex;
   &.comments--replied{
-    padding-left: 130px;
+    margin-left: 130px;
+    border-bottom: 1px solid #e0e0e0;
+    .comments__content{
+      border-bottom: none;
+    }
   }
   &__title{
     font-size: 24px;
@@ -1786,30 +1790,41 @@
   &__box-input {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   &__text-input{
     width: 400px;
     display: inline-block;
     height: 50px;
-    padding: 0 20px;
+    padding: 0 50px 0 20px;
     border: 1px solid #e5e5e5;
     color: #333;
     &::placeholder {
       color: #999;
     }
+    &:focus {
+      outline: none !important;
+      border: 1px solid $btn;
+    }
   }
   &__textarea{
     border: 1px solid #e5e5e5;
-    padding: 15px 20px;
+    padding: 15px 50px 15px 20px;
     display: block;
     width: 100%;
     height: 120px;
     resize: none;
     margin-bottom: 40px;
     color: #333;
+    background-image: url(../images/icons/comment.svg);
+    background-repeat: no-repeat;
+    background-position: 790px 20px;
     &::placeholder{
       color: #999;
+    }
+    &:focus{
+      outline: none !important;
+      border: 1px solid $btn;
     }
   }
   &__btn{
@@ -1818,10 +1833,21 @@
     color: #fff;
     text-transform: uppercase;
     @extend %Rubik-400;
-    padding: 12px 30px;
+    padding: 10px 30px;
     font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
+  }
+  &__text-input--name,
+  &__text-input--mail{
+    background-repeat: no-repeat;
+    background-position: 360px 17px; 
+  }
+  &__text-input--name{
+    background-image: url(../images/icons/name.svg);
+  }
+  &__text-input--mail{
+    background-image: url(../images/icons/mail.svg);
   }
 }
 
