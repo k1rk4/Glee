@@ -1,0 +1,114 @@
+.header {
+  padding: 50px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    margin-right: 25px;
+  }
+
+  &__title {
+    color: $head;
+    font-size: 36px;
+    line-height: 58px;
+    @extend %Rubik-500;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    margin-left: 35px;
+  }
+
+  &__list-link {
+    color: $head;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %Rubik-500;
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__oval {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fcd7b6;
+    margin-right: 20px;
+
+    &-line:before {
+      content: '';
+      position: absolute;
+      background-color: #fde7d3;
+      width: 1px;
+      height: 32px;
+    }
+  }
+
+  &__num {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -7px;
+    right: -9px;
+    font-size: 10px;
+    line-height: 16px;
+    color: $accent;
+    text-align: center;
+    @extend %DMSans-400;
+  }
+
+  &__link {
+    position: relative;
+
+    &--search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #edf1f4;
+      margin-right: 20px;
+    }
+
+    &--more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $btn;
+    }
+
+    &--heart {
+      position: relative;
+    }
+
+    &--cart {
+      position: relative;
+    }
+  }
+}

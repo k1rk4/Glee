@@ -1,0 +1,66 @@
+.modal {
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+
+  form {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: $head;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 15px;
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  &__error {
+    margin-left: 180px;
+  }
+
+  &__btn {
+    display: block;
+    background-color: $btn;
+    color: #fff;
+    font-size: 18px;
+    @extend %Rubik-500;
+    padding: 20px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin: 35px 0;
+  }
+
+  a {
+    font-size: 14px;
+    color: $head;
+  }
+
+  &__links {
+    width: 100%;
+    border-top: 2px solid #f6f6f6;
+    text-align: center;
+    padding-top: 35px;
+  }
+
+  &__link-btn {
+    display: block;
+    font-size: 18px;
+    color: $accent;
+    @extend %Rubik-500;
+    padding: 20px 0;
+    border: 2px solid $btn;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+}
