@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    max-width: 270px;
     height: 380px;
     background-color: #fff;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -203,6 +203,135 @@
       position: absolute;
       top: 45%;
       left: 135px;
+    }
+  }
+}
+
+@media (max-width: 1400px){
+  .products__bottom{
+    &-item{
+      img{
+        left: 0;
+      }
+    }
+    &-content{
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 1230px){
+  .products {
+    &__items {
+      min-height: 800px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .products__bottom-item +.products__bottom-item{
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .products__bottom {
+    display: block;
+    padding: 60px 15px 60px;
+    &-item {
+      img {
+        top: 0;
+      }
+    }
+    &-content {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 950px){
+  .info{
+    flex-direction: column;
+    align-items: center;
+    &__item{
+      padding-top: 20px;
+    }
+    &__item-line{
+      display: none;
+    }
+  }
+  .products {
+    &__items {
+      min-height: 800px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+    &__item{
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px){
+  .products {
+    &__items {
+      min-height: 800px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 560px){
+  .products__bottom{
+    &-item {
+      min-height: 260px;
+      img {
+       max-width: 30%;
+       top: 10px;
+      }
+    }
+    &-title {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+    &-text {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .info {
+    display: block;
+    &__item{
+      width: 100%;
+    }
+    &__item-content{
+      padding-left: 15px;
+    }
+    &__item-text{
+      font-size: 16px;
+      line-height: 30px;
+    }
+    &__item-text{
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 380px){
+   .products__bottom {
+     &-img{
+       width: 0;
+     }
+     &-item {
+      img {
+        display: none;
+      }
     }
   }
 }

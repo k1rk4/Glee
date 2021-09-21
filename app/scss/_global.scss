@@ -133,3 +133,31 @@ a{
   }
 }
 
+@media (max-width: 1230px){
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    &__tab {
+      margin-bottom: 60px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 23px;
+    margin-bottom: 10px;
+    &__tab {
+      margin-bottom: 30px;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  .title__tab-item +.title__tab-item {
+    margin-left: 10px;
+  }
+}

@@ -64,7 +64,7 @@
     }
 
     &-box {
-      height: 200px;
+      min-height: 200px;
       padding: 35px 30px 30px;
       display: flex;
       flex-direction: column;
@@ -117,6 +117,70 @@
         width: 13px;
         height: 15px;
         background-image: url(../images/icons/calendar.svg);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .insight{
+    &__items{
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .insight {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      max-width: 100%;
+      &-info{
+        justify-content: space-between;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .insight {
+    padding-top: 60px;
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .insight{
+    &__top{
+      display: block;
+      &-title{
+        text-align: left;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px){
+  .insight {
+    &__item {
+      &-info {
+        display: block;
+      }
+      &-author{
+        margin-left: 5px;
+        &::before{
+          top: 0;
+        }
       }
     }
   }

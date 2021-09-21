@@ -1,5 +1,5 @@
 .video {
-  height: 501px;
+  min-height: 501px;
   background-image: url(../images/video-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,4 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 760px){
+  .video{
+    min-height: 300px;
+  }
 }
