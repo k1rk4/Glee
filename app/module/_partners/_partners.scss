@@ -8,3 +8,16 @@
     align-items: center;
   }
 }
+
+@media (max-width: 760px){
+  .partners{
+    &__list{
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+    &__item {
+      margin: 10px 35px;
+    }
+  }
+}
