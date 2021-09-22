@@ -4,6 +4,18 @@
 @import 'libs';
 @import 'global';
 
+.top {
+  padding: 35px 0;
+  background-color: #edf1f4;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    @extend %Rubik-300;
+  }
+}
 
 .terms{
   padding: 45px 0 40px;
@@ -1321,8 +1333,61 @@
 }
 
 
+@media (max-width: 1230px){
+  .blog{
+    .filter-category,
+    .recent-posts{
+      display: none;
+    }
+    &__inner {
+      flex-direction: column;
+    }
+    &__content {
+      width: 100%;
+      margin-right: 0;
+    }
+    &__aside {
+      order: -1;
+      width: 100%;
+    }
+    &__item-img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .filter-search {
+      &__input {
+        width: 100%;
+      }
+    }
+  }
+}
 
+@media (max-width: 650px){
+  .blog{
+    padding: 60px 0;
+    &__item-img{
+      height: 320px;
+    }
+    &__item-info{
+      top: 270px;
+      height: 50px;
+    }
+  }
+}
 
+@media (max-width: 400px) {
+  .blog {
+    &__item-img {
+      height: 200px;
+    }
+
+    &__item-info {
+      top: 175px;
+      height: 25px;
+      width: 245px;
+    }
+  }
+}
 
 
 
