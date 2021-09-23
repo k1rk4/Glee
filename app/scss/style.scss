@@ -139,7 +139,7 @@
 .benefits{
   background-color: #fcd7b6;
   &__list{
-    height: 320px;
+    min-height: 320px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1333,128 +1333,6 @@
 }
 
 
-@media (max-width: 1230px){
-  .blog{
-    .filter-category,
-    .recent-posts{
-      display: none;
-    }
-    &__inner {
-      flex-direction: column;
-    }
-    &__content {
-      width: 100%;
-      margin-right: 0;
-    }
-    &__aside {
-      order: -1;
-      width: 100%;
-    }
-    &__item-img {
-      max-width: 100%;
-      width: 100%;
-    }
-    .filter-search {
-      &__input {
-        width: 100%;
-      }
-    }
-  }
-  .blog-one{
-    &__img-link{
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  .comments{
-    &-form{
-      max-width: 830px;
-    }
-  }
-}
-
-@media (max-width: 860px){
-  .comments-form{
-    &__text-input,
-    &__textarea{
-      background-image: none;
-    }
-  }
-}
-
-@media (max-width: 650px){
-  .blog{
-    padding: 60px 0;
-    &__item-img{
-      height: 320px;
-    }
-    &__item-info{
-      top: 270px;
-      height: 50px;
-    }
-  }
-  .blog-one{
-    &__author{
-      padding: 10px 0;
-      display: block;
-      height: auto;
-    }
-    &__author-info{
-      margin-bottom: 10px;
-    }
-  }
-  .comments-form {
-    &__box-input{
-      display: block;
-      margin-bottom: 0;
-    }
-    &__text-input {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  }
-}
-
-@media (max-width: 560px){
-  .blog-one{
-    &__text{
-      blockquote{
-        padding: 10px;
-      }
-    }
-  }
-  .comments{
-    &__img{
-      display: none;
-    }
-    &.comments--replied{
-      margin-left: 30px;
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .blog {
-    &__item-img {
-      height: 200px;
-    }
-    &__item-info {
-      top: 175px;
-      height: 25px;
-      width: 245px;
-    }
-  }
-  .blog-one{
-    &__left-img{
-      margin-right: 0;
-      height: 180px;
-    }
-    &__right-img{
-      margin-left: 0;
-      height: 180px;
-    }
-  }
-}
 
 
 
