@@ -1,5 +1,21 @@
 $(function() {
 
+  var containerEl1 = document.querySelector('[data-ref="container-1"]');
+  var containerEl2 = document.querySelector('[data-ref="container-2"]');
+ 
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+ 
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer2 = mixitup(containerEl2, config);
+
+  $('.product-list__filter-btn').on('click', function () {
+    $('.product-list__filters').slideToggle();
+  })
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
   });
@@ -28,6 +44,15 @@ $(function() {
     draggable: false,
     arrows: false,
     fade: true,
+     responsive: [
+      {
+      breakpoint: 1231,
+      settings: {
+       draggable: true,
+       fade: false,
+      }
+    },
+    ]
   });
 
   $(".filter-price__input").ionRangeSlider({

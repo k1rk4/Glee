@@ -4,6 +4,18 @@
 @import 'libs';
 @import 'global';
 
+.top {
+  padding: 35px 0;
+  background-color: #edf1f4;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    @extend %Rubik-300;
+  }
+}
 
 .terms{
   padding: 45px 0 40px;
@@ -127,7 +139,7 @@
 .benefits{
   background-color: #fcd7b6;
   &__list{
-    height: 320px;
+    min-height: 320px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -258,6 +270,9 @@
   &__filters{
     margin-right: 30px;
     width: 270px;
+  }
+  &__filter-btn{
+    display: none;
   }
 }
 
@@ -560,6 +575,7 @@
     font-size: 15px;
     letter-spacing: 1px;
     margin-left: 15px;
+    cursor: pointer;
   }
 }
 
@@ -961,14 +977,14 @@
     min-height: 300px;
   }
   &__left-img{
-    min-width: 320px;
+    max-width: 320px;
     height: 210px;
     overflow: hidden;
     margin-right: 30px;
     float: left;
   }
   &__right-img {
-    min-width: 320px;
+    max-width: 320px;
     height: 210px;
     overflow: hidden;
     margin-left: 30px;
@@ -1319,8 +1335,6 @@
   max-width: 500px;
   height: 330px;
 }
-
-
 
 
 
