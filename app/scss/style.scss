@@ -271,6 +271,9 @@
     margin-right: 30px;
     width: 270px;
   }
+  &__filter-btn{
+    display: none;
+  }
 }
 
 .filter{
@@ -572,6 +575,7 @@
     font-size: 15px;
     letter-spacing: 1px;
     margin-left: 15px;
+    cursor: pointer;
   }
 }
 

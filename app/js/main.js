@@ -1,5 +1,9 @@
 $(function() {
 
+   $('.product-list__filter-btn').on('click', function () {
+    $('.product-list__filters').slideToggle();
+  })
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
   });
@@ -28,6 +32,15 @@ $(function() {
     draggable: false,
     arrows: false,
     fade: true,
+     responsive: [
+      {
+      breakpoint: 1231,
+      settings: {
+       draggable: true,
+       fade: false,
+      }
+    },
+    ]
   });
 
   $(".filter-price__input").ionRangeSlider({
